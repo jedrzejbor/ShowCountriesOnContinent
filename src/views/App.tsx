@@ -1,5 +1,6 @@
 import React from 'react';
 import MainPage from './MainPage';
+import ContinentPage from './ContinentPage';
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,6 +12,7 @@ const App: React.FC = () => {
     <Router>
       <Switch>
         <Route exact path="/" component={MainPage}/>
+        <Route exact path="/continents" component={ContinentPage}/>
       </Switch>
     </Router>
   );
